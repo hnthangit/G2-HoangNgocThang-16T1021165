@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppG2", "AppG2\AppG2.csproj", "{CDAF863F-D81B-4804-B992-B67247B8EB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlideShowImage", "SlideShowImage\SlideShowImage.csproj", "{83654016-A113-4D43-AE4F-4E9DC3ABE674}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDAF863F-D81B-4804-B992-B67247B8EB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDAF863F-D81B-4804-B992-B67247B8EB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDAF863F-D81B-4804-B992-B67247B8EB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDAF863F-D81B-4804-B992-B67247B8EB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83654016-A113-4D43-AE4F-4E9DC3ABE674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83654016-A113-4D43-AE4F-4E9DC3ABE674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83654016-A113-4D43-AE4F-4E9DC3ABE674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83654016-A113-4D43-AE4F-4E9DC3ABE674}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CE87EA0-D58B-4949-8B7F-9A801B2EE580}
+	EndGlobalSection
+EndGlobal

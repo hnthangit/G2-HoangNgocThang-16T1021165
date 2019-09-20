@@ -1,0 +1,10 @@
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\bin\Debug\SlideShowImage.exe.config
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\bin\Debug\SlideShowImage.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\bin\Debug\SlideShowImage.pdb
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.csprojAssemblyReference.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.HoangNgocThang.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.Properties.Resources.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.csproj.GenerateResource.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.csproj.CoreCompileInputs.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\SlideShowImage\obj\Debug\SlideShowImage.pdb

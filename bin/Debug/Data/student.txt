@@ -1,0 +1,6 @@
+﻿102T100100#Văn#Huy#Male#2000-12-23#Huế
+103T106100#Hoàng#Thắng#Male#2000-12-23#Huế
+107T100100#Nguyễn#Minh#Male#2000-12-23#Huế
+19LT100100#Phan#Ánh#Male#2000-01-23#Huế
+192Y100100#Hoàng#Quý#Male#2000-12-23#Huế
+102T190100#Nguyễn#Dũng#Male#2000-12-23#Huế

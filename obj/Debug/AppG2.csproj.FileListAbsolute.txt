@@ -1,0 +1,15 @@
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe.config
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.pdb
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csprojAssemblyReference.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Properties.Resources.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.GenerateResource.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.CoreCompileInputs.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.pdb
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.frmTinhToanCoBan.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.frmThongTinSinhVien2.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmThongTinSinhVien.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\Data\student.txt
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\Data\learninghistory.txt
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmQuaTrinhHocTapChiTiet.resources

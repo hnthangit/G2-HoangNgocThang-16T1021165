@@ -72,7 +72,7 @@ namespace AppG2.View
 
                 //Tao moi
                 string newHistory = newId + "#" + numTuNam.Value.ToString() + "#" + numDenNam.Value.ToString() + "#" + txtNguoiHoc.Text + "#" + idStudent;
-                File.AppendAllText(pathHistoryLearningDataFile, newHistory);
+                File.AppendAllText(pathHistoryLearningDataFile, "\n"+newHistory);
             }
             MessageBox.Show("Đã cập nhật dữ liệu thành công");
             

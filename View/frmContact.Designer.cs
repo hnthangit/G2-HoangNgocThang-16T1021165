@@ -42,16 +42,9 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bdsContact = new System.Windows.Forms.BindingSource(this.components);
             this.btnClose = new System.Windows.Forms.Button();
-            this.lblA = new System.Windows.Forms.Label();
-            this.lblD = new System.Windows.Forms.Label();
-            this.lblG = new System.Windows.Forms.Label();
-            this.lblJ = new System.Windows.Forms.Label();
-            this.lblM = new System.Windows.Forms.Label();
-            this.lblP = new System.Windows.Forms.Label();
-            this.lblS = new System.Windows.Forms.Label();
-            this.lblV = new System.Windows.Forms.Label();
-            this.lblZ = new System.Windows.Forms.Label();
             this.lblAll = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsContact)).BeginInit();
             this.SuspendLayout();
@@ -181,122 +174,46 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // lblA
-            // 
-            this.lblA.AutoSize = true;
-            this.lblA.Location = new System.Drawing.Point(794, 199);
-            this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(17, 17);
-            this.lblA.TabIndex = 7;
-            this.lblA.Text = "A";
-            this.lblA.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblD
-            // 
-            this.lblD.AutoSize = true;
-            this.lblD.Location = new System.Drawing.Point(793, 235);
-            this.lblD.Name = "lblD";
-            this.lblD.Size = new System.Drawing.Size(18, 17);
-            this.lblD.TabIndex = 8;
-            this.lblD.Text = "D";
-            this.lblD.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblG
-            // 
-            this.lblG.AutoSize = true;
-            this.lblG.Location = new System.Drawing.Point(793, 271);
-            this.lblG.Name = "lblG";
-            this.lblG.Size = new System.Drawing.Size(19, 17);
-            this.lblG.TabIndex = 9;
-            this.lblG.Text = "G";
-            this.lblG.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblJ
-            // 
-            this.lblJ.AutoSize = true;
-            this.lblJ.Location = new System.Drawing.Point(795, 307);
-            this.lblJ.Name = "lblJ";
-            this.lblJ.Size = new System.Drawing.Size(15, 17);
-            this.lblJ.TabIndex = 10;
-            this.lblJ.Text = "J";
-            this.lblJ.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblM
-            // 
-            this.lblM.AutoSize = true;
-            this.lblM.Location = new System.Drawing.Point(793, 343);
-            this.lblM.Name = "lblM";
-            this.lblM.Size = new System.Drawing.Size(19, 17);
-            this.lblM.TabIndex = 11;
-            this.lblM.Text = "M";
-            this.lblM.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblP
-            // 
-            this.lblP.AutoSize = true;
-            this.lblP.Location = new System.Drawing.Point(794, 379);
-            this.lblP.Name = "lblP";
-            this.lblP.Size = new System.Drawing.Size(17, 17);
-            this.lblP.TabIndex = 12;
-            this.lblP.Text = "P";
-            this.lblP.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblS
-            // 
-            this.lblS.AutoSize = true;
-            this.lblS.Location = new System.Drawing.Point(794, 415);
-            this.lblS.Name = "lblS";
-            this.lblS.Size = new System.Drawing.Size(17, 17);
-            this.lblS.TabIndex = 13;
-            this.lblS.Text = "S";
-            this.lblS.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblV
-            // 
-            this.lblV.AutoSize = true;
-            this.lblV.Location = new System.Drawing.Point(794, 451);
-            this.lblV.Name = "lblV";
-            this.lblV.Size = new System.Drawing.Size(17, 17);
-            this.lblV.TabIndex = 14;
-            this.lblV.Text = "V";
-            this.lblV.Click += new System.EventHandler(this.Label_Click);
-            // 
-            // lblZ
-            // 
-            this.lblZ.AutoSize = true;
-            this.lblZ.Location = new System.Drawing.Point(794, 487);
-            this.lblZ.Name = "lblZ";
-            this.lblZ.Size = new System.Drawing.Size(17, 17);
-            this.lblZ.TabIndex = 15;
-            this.lblZ.Text = "Z";
-            this.lblZ.Click += new System.EventHandler(this.Label_Click);
-            // 
             // lblAll
             // 
             this.lblAll.AutoSize = true;
-            this.lblAll.Location = new System.Drawing.Point(791, 163);
+            this.lblAll.Location = new System.Drawing.Point(818, 163);
             this.lblAll.Name = "lblAll";
             this.lblAll.Size = new System.Drawing.Size(23, 17);
             this.lblAll.TabIndex = 16;
             this.lblAll.Text = "All";
             this.lblAll.Click += new System.EventHandler(this.Label_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(70, 85);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.56097F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.43903F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(251, 63);
+            this.tableLayoutPanel1.TabIndex = 17;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(791, 189);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(60, 323);
+            this.flowLayoutPanel1.TabIndex = 18;
+            // 
             // frmContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
-            this.ClientSize = new System.Drawing.Size(834, 591);
+            this.ClientSize = new System.Drawing.Size(881, 591);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblAll);
-            this.Controls.Add(this.lblZ);
-            this.Controls.Add(this.lblV);
-            this.Controls.Add(this.lblS);
-            this.Controls.Add(this.lblP);
-            this.Controls.Add(this.lblM);
-            this.Controls.Add(this.lblJ);
-            this.Controls.Add(this.lblG);
-            this.Controls.Add(this.lblD);
-            this.Controls.Add(this.lblA);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dtgContact);
             this.Controls.Add(this.btnXoa);
@@ -328,15 +245,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Label lblA;
-        private System.Windows.Forms.Label lblD;
-        private System.Windows.Forms.Label lblG;
-        private System.Windows.Forms.Label lblJ;
-        private System.Windows.Forms.Label lblM;
-        private System.Windows.Forms.Label lblP;
-        private System.Windows.Forms.Label lblS;
-        private System.Windows.Forms.Label lblV;
-        private System.Windows.Forms.Label lblZ;
         private System.Windows.Forms.Label lblAll;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

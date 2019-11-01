@@ -18,6 +18,12 @@ namespace AppG2.View
         #region Path data file
         string pathContactFile;
         #endregion
+
+        #region Auto generate label
+        int totalFirstCharacter;
+        #endregion
+
+
         public frmContact()
         {
             InitializeComponent();
@@ -35,6 +41,35 @@ namespace AppG2.View
                 bdsContact.DataSource = listContact;
             }
             dtgContact.DataSource = bdsContact;
+            AddNewLabel();
+        }
+
+        public void AddNewLabel()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            List<string> listLabelDuplicate = new List<string>();
+            var listContactNoSort = ContactService.GetAllContact(pathContactFile);
+
+            //Them vao mang cac chu cai dau tien cua name
+            foreach (var item in listContactNoSort)
+            {
+                listLabelDuplicate.Add(item.FirstCharacter);
+            }
+
+            //Loai bo cac phan tu trung nhau
+            List<String> labels = listLabelDuplicate.Distinct().ToList();
+
+            //Sap xep lai mang
+            labels.Sort();
+
+            //Tao label moi 
+            for (int i = 0; i < labels.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Text = labels[i];
+                lbl.Click += new System.EventHandler(this.Label_Click);
+                flowLayoutPanel1.Controls.Add(lbl);
+            }
         }
 
         private void BtnThem_Click(object sender, EventArgs e)
@@ -47,6 +82,7 @@ namespace AppG2.View
                 var newContactList = newContactListNoSort.OrderBy(x => x.Name);
                 bdsContact.DataSource = newContactList;
                 bdsContact.ResetBindings(true);
+                AddNewLabel();
             }
         }
 
@@ -63,6 +99,7 @@ namespace AppG2.View
                     var newContactList = newContactListNoSort.OrderBy(x => x.Name);
                     bdsContact.DataSource = newContactList;
                     bdsContact.ResetBindings(true);
+                    AddNewLabel();
                 }
             }
         }
@@ -118,8 +155,9 @@ namespace AppG2.View
         private void Label_Click(object sender, EventArgs e)
         {
             var labelName = ((Label)sender).Text;
-            var listContact = ContactService.GetContactInAlphabetic(labelName, pathContactFile);
-            bdsContact.DataSource = listContact;
+            var listContactNoSort = ContactService.GetContactInAlphabetic(labelName, pathContactFile);
+            var newContactList = listContactNoSort.OrderBy(x => x.Name).ToList();
+            bdsContact.DataSource = newContactList;
             bdsContact.ResetBindings(true);
         }
     }

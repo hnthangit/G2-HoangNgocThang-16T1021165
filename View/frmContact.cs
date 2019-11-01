@@ -27,7 +27,7 @@ namespace AppG2.View
             dtgContact.AutoGenerateColumns = false;
 
             var listContactNoSort = ContactService.GetAllContact(pathContactFile);
-            var listContact = listContactNoSort.OrderBy(x => x.Name);
+            var listContact = listContactNoSort.OrderBy(x => x.Name).ToList();
             if (listContact == null)
                 throw new Exception("Khong co lien lac nao");
             else
@@ -96,7 +96,7 @@ namespace AppG2.View
                 var newLines = Lines.Where(line => !line.Contains(delete));
                 File.WriteAllLines(pathContactFile, newLines);
                 //Ép kiểu 2 bdsQuaTrinhHocTap.Current as HistoryLearning
-                MessageBox.Show("Bạn đã xóa thành công. Địa chỉ: " + contact.Name);
+                MessageBox.Show("Bạn đã xóa thành công. Name: " + contact.Name);
             }
             else
             {

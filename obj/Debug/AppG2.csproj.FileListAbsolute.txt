@@ -1,7 +1,6 @@
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe.config
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.pdb
-C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csprojAssemblyReference.cache
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Properties.Resources.resources
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.GenerateResource.cache
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.CoreCompileInputs.cache
@@ -13,3 +12,7 @@ C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmThongTi
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\Data\student.txt
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\Data\learninghistory.txt
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmQuaTrinhHocTapChiTiet.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmContact.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\Data\contact.txt
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmContactInfo.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csprojAssemblyReference.cache

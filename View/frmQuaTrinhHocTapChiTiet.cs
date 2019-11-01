@@ -71,6 +71,7 @@ namespace AppG2.View
                 string newId = range.ElementAt(index).ToString();
 
                 //Tao moi
+
                 string newHistory = newId + "#" + numTuNam.Value.ToString() + "#" + numDenNam.Value.ToString() + "#" + txtNguoiHoc.Text + "#" + idStudent;
                 File.AppendAllText(pathHistoryLearningDataFile, "\n"+newHistory);
             }

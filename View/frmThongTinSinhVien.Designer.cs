@@ -46,25 +46,25 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.btnSua = new System.Windows.Forms.ToolStripButton();
-            this.btnXoa = new System.Windows.Forms.ToolStripButton();
-            this.btnThem = new System.Windows.Forms.ToolStripButton();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnCapNhat = new System.Windows.Forms.Button();
-            this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
             this.menuAvatar = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mniXoaAnhDaiDien = new System.Windows.Forms.ToolStripMenuItem();
             this.txtTen = new System.Windows.Forms.TextBox();
+            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.ToolStripButton();
+            this.btnXoa = new System.Windows.Forms.ToolStripButton();
+            this.btnThem = new System.Windows.Forms.ToolStripButton();
+            this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
             this.bdsQuaTrinhHocTap = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgQuaTrinhHocTap)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.statusStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             this.menuAvatar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsQuaTrinhHocTap)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,36 +227,6 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(122, 24);
             this.toolStripLabel1.Text = "qua trinh hoc tap";
             // 
-            // btnSua
-            // 
-            this.btnSua.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnSua.Image = global::AppG2.Properties.Resources.tet;
-            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(57, 24);
-            this.btnSua.Text = "Sua";
-            this.btnSua.Click += new System.EventHandler(this.BtnSua_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnXoa.Image = global::AppG2.Properties.Resources._65391227_2329240620726686_7304304825649332224_n;
-            this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(59, 24);
-            this.btnXoa.Text = "Xoa";
-            this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnThem.Image = global::AppG2.Properties.Resources.iconfinder_plus_24_103172;
-            this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(70, 24);
-            this.btnThem.Text = "Them";
-            this.btnThem.Click += new System.EventHandler(this.BtnThem_Click);
-            // 
             // statusStrip2
             // 
             this.statusStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -296,34 +266,6 @@
             this.button2.Text = "Bo Qua";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCapNhat.Image = global::AppG2.Properties.Resources.iconfinder_11___Valid_18155601;
-            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(455, 550);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(178, 42);
-            this.btnCapNhat.TabIndex = 17;
-            this.btnCapNhat.Text = "Cap nhat";
-            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCapNhat.UseVisualStyleBackColor = true;
-            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
-            // 
-            // picAnhDaiDien
-            // 
-            this.picAnhDaiDien.ContextMenuStrip = this.menuAvatar;
-            this.picAnhDaiDien.Image = global::AppG2.Properties.Resources.tet;
-            this.picAnhDaiDien.Location = new System.Drawing.Point(509, 12);
-            this.picAnhDaiDien.Name = "picAnhDaiDien";
-            this.picAnhDaiDien.Size = new System.Drawing.Size(279, 219);
-            this.picAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAnhDaiDien.TabIndex = 0;
-            this.picAnhDaiDien.TabStop = false;
-            this.picAnhDaiDien.DragDrop += new System.Windows.Forms.DragEventHandler(this.Anhdaidien_DragDrop);
-            this.picAnhDaiDien.DragEnter += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragEnter);
-            // 
             // menuAvatar
             // 
             this.menuAvatar.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -346,6 +288,64 @@
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(82, 22);
             this.txtTen.TabIndex = 19;
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCapNhat.Image = global::AppG2.Properties.Resources.iconfinder_11___Valid_18155601;
+            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapNhat.Location = new System.Drawing.Point(455, 550);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(178, 42);
+            this.btnCapNhat.TabIndex = 17;
+            this.btnCapNhat.Text = "Cap nhat";
+            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.BtnCapNhat_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSua.Image = global::AppG2.Properties.Resources.tet;
+            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(57, 24);
+            this.btnSua.Text = "Sua";
+            this.btnSua.Click += new System.EventHandler(this.BtnSua_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnXoa.Image = global::AppG2.Properties.Resources._65391227_2329240620726686_7304304825649332224_n;
+            this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(59, 24);
+            this.btnXoa.Text = "Xoa";
+            this.btnXoa.Click += new System.EventHandler(this.BtnXoa_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnThem.Image = global::AppG2.Properties.Resources.iconfinder_plus_24_103172;
+            this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(70, 24);
+            this.btnThem.Text = "Them";
+            this.btnThem.Click += new System.EventHandler(this.BtnThem_Click);
+            // 
+            // picAnhDaiDien
+            // 
+            this.picAnhDaiDien.ContextMenuStrip = this.menuAvatar;
+            this.picAnhDaiDien.Image = global::AppG2.Properties.Resources.tet;
+            this.picAnhDaiDien.Location = new System.Drawing.Point(509, 12);
+            this.picAnhDaiDien.Name = "picAnhDaiDien";
+            this.picAnhDaiDien.Size = new System.Drawing.Size(279, 219);
+            this.picAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAnhDaiDien.TabIndex = 0;
+            this.picAnhDaiDien.TabStop = false;
+            this.picAnhDaiDien.DragDrop += new System.Windows.Forms.DragEventHandler(this.Anhdaidien_DragDrop);
+            this.picAnhDaiDien.DragEnter += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragEnter);
             // 
             // frmThongTinSinhVien
             // 
@@ -379,8 +379,8 @@
             this.toolStrip1.PerformLayout();
             this.statusStrip2.ResumeLayout(false);
             this.statusStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).EndInit();
             this.menuAvatar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsQuaTrinhHocTap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

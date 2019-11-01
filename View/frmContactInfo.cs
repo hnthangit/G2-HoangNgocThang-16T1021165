@@ -48,8 +48,10 @@ namespace AppG2.View
                 String deleteOldContact = contact.Id + "#" + contact.Name + "#" + contact.Phone + "#" + contact.Email;
                 var Lines = File.ReadAllLines(pathContactFile);
                 var newLines = Lines.Where(line => !line.Contains(deleteOldContact));
+                var temp = newLines.ToList();
+                temp.Add(newContact);
+                newLines = temp as IEnumerable<string>;
                 File.WriteAllLines(pathContactFile, newLines);
-                File.AppendAllText(pathContactFile, newContact);
             }
             else
             {
@@ -69,9 +71,12 @@ namespace AppG2.View
                 string newId = range.ElementAt(index).ToString();
 
                 //Tao moi
-
                 string newContact = newId + "#" + txtName.Text + "#" + txtPhone.Text + "#" + txtEmail.Text;
-                File.AppendAllText(pathContactFile, "\n" + newContact);
+                //File.AppendAllText(pathContactFile, Environment.NewLine+ newContact );
+                List<string> temp = new List<string>();
+                temp.Add(newContact);
+                var newLine = temp as IEnumerable<string>;
+                File.AppendAllLines(pathContactFile, newLine);
             }
             MessageBox.Show("Đã cập nhật dữ liệu thành công");
 

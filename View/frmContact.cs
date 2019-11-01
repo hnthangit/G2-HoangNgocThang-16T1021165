@@ -19,11 +19,6 @@ namespace AppG2.View
         string pathContactFile;
         #endregion
 
-        #region Auto generate label
-        int totalFirstCharacter;
-        #endregion
-
-
         public frmContact()
         {
             InitializeComponent();
@@ -79,7 +74,7 @@ namespace AppG2.View
             {
                 //Tiến hành nạp lại dữ liệu lên lưới
                 var newContactListNoSort = ContactService.GetAllContact(pathContactFile);
-                var newContactList = newContactListNoSort.OrderBy(x => x.Name);
+                List<Contact> newContactList = newContactListNoSort.OrderBy(x => x.Name).ToList();
                 bdsContact.DataSource = newContactList;
                 bdsContact.ResetBindings(true);
                 AddNewLabel();
@@ -96,7 +91,7 @@ namespace AppG2.View
                 {
                     //Tiến hành nạp lại dữ liệu lên lưới
                     var newContactListNoSort = ContactService.GetAllContact(pathContactFile);
-                    var newContactList = newContactListNoSort.OrderBy(x => x.Name);
+                    List<Contact> newContactList = newContactListNoSort.OrderBy(x => x.Name).ToList();
                     bdsContact.DataSource = newContactList;
                     bdsContact.ResetBindings(true);
                     AddNewLabel();

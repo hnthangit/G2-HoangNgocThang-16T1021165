@@ -43,7 +43,6 @@
             this.bdsContact = new System.Windows.Forms.BindingSource(this.components);
             this.btnClose = new System.Windows.Forms.Button();
             this.lblAll = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsContact)).BeginInit();
@@ -184,19 +183,6 @@
             this.lblAll.Text = "All";
             this.lblAll.Click += new System.EventHandler(this.Label_Click);
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(70, 85);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.56097F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.43903F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(251, 63);
-            this.tableLayoutPanel1.TabIndex = 17;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -212,7 +198,6 @@
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(881, 591);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblAll);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dtgContact);
@@ -246,7 +231,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label lblAll;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

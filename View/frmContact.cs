@@ -104,16 +104,12 @@ namespace AppG2.View
             }
         }
 
-
-        private void TxtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-          var contactListNoSort = ContactService.GetContactBySearch(txtSearch.Text, pathContactFile);
-          var newContactList = contactListNoSort.OrderBy(x => x.Name);
-           bdsContact.DataSource = newContactList;
-           bdsContact.ResetBindings(true);
-
+            var contactListNoSort = ContactService.GetContactBySearch(txtSearch.Text, pathContactFile);
+            //var newContactList = contactListNoSort.OrderBy(x => x.Name);
+            bdsContact.DataSource = contactListNoSort;
+            bdsContact.ResetBindings(true);
         }
-
-
     }
 }

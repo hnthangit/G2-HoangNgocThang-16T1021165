@@ -1,0 +1,9 @@
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\obj\Debug\SingletonPattern.Properties.Resources.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\obj\Debug\SingletonPattern.csproj.GenerateResource.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\obj\Debug\SingletonPattern.csproj.CoreCompileInputs.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\bin\Debug\SingletonPattern.exe.config
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\bin\Debug\SingletonPattern.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\bin\Debug\SingletonPattern.pdb
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\obj\Debug\SingletonPattern.Form1.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\obj\Debug\SingletonPattern.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\SingletonPattern\obj\Debug\SingletonPattern.pdb

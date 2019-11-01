@@ -39,8 +39,6 @@ namespace AppG2.View
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
-            //var  = (HistoryLearning)bdsQuaTrinhHocTap.Current;
-            //var idStudent = hl.IDStudent;
             var f = new frmContactInfo(null); ;
             if (f.ShowDialog() == DialogResult.OK)
             {
@@ -107,8 +105,21 @@ namespace AppG2.View
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             var contactListNoSort = ContactService.GetContactBySearch(txtSearch.Text, pathContactFile);
-            //var newContactList = contactListNoSort.OrderBy(x => x.Name);
+            //var newContactList = contactListNoSort.OrderBy(x => x.Name).ToList();
             bdsContact.DataSource = contactListNoSort;
+            bdsContact.ResetBindings(true);
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Label_Click(object sender, EventArgs e)
+        {
+            var labelName = ((Label)sender).Text;
+            var listContact = ContactService.GetContactInAlphabetic(labelName, pathContactFile);
+            bdsContact.DataSource = listContact;
             bdsContact.ResetBindings(true);
         }
     }

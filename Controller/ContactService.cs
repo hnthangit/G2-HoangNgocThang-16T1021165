@@ -35,8 +35,9 @@ namespace AppG2.Controller
             else return null;
         }
         
-        public static List<Contact> GetContactBySearch(string text, string pathDataFile)
+        public static List<Contact> GetContactBySearch(string originalText, string pathDataFile)
         {
+            string text = originalText.ToLower();
             List<Contact> newListContact = new List<Contact>();
             if (!text.Equals(""))
             {
@@ -44,7 +45,7 @@ namespace AppG2.Controller
                 
                 foreach (var item in listContact)
                 {
-                    if (item.Name.Contains(text) || item.Phone.Contains(text) || item.Email.Contains(text))
+                    if (item.Name.ToLower().Contains(text) || item.Phone.ToLower().Contains(text) || item.Email.ToLower().Contains(text))
                     {
                         newListContact.Add(item);
                     }
@@ -55,6 +56,28 @@ namespace AppG2.Controller
                 return GetAllContact(pathDataFile);
             }
 
+        }
+
+        public static List<Contact> GetContactInAlphabetic(string text, string pathDataFile)
+        {
+            List<Contact> newListContact = new List<Contact>();
+            if (!text.Equals("All"))
+            {
+                List<Contact> listContact = GetAllContact(pathDataFile);
+
+                foreach (var item in listContact)
+                {
+                    if (String.Compare(item.FirstCharacter, text)>=0)
+                    {
+                        newListContact.Add(item);
+                    }
+                }
+                return newListContact;
+            }
+            else
+            {
+                return GetAllContact(pathDataFile);
+            }
         }
     }
 }

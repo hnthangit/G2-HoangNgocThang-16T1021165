@@ -132,6 +132,9 @@ namespace AppG2.View
             {
                 MessageBox.Show("Bạn đã không xóa");
             }
+
+            //Dictionary > Contacts = contacts.GroupBy(x => x.CardName.Substring(0, 1).ToUpper(), (Letter, Contacts) => new { Alphabet = Letter, SubList = Contacts.OrderBy(x => x.CardName).ToList() })
+            //    .OrderBy(x => x.Alphabet).ToDictionary(x => x.Alphabet, x => x.SubList);
         }
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)

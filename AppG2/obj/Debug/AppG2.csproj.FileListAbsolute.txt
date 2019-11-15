@@ -16,3 +16,9 @@ C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmContact
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\Data\contact.txt
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmContactInfo.resources
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csprojAssemblyReference.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.dll
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.xml
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.CopyComplete
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Migrations.a.resources

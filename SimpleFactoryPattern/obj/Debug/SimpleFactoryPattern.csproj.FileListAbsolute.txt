@@ -1,0 +1,17 @@
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\SimpleFactoryPattern.exe.config
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\SimpleFactoryPattern.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\SimpleFactoryPattern.pdb
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\EntityFramework.dll
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\EntityFramework.xml
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.csprojAssemblyReference.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.Properties.Resources.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.csproj.GenerateResource.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.csproj.CoreCompileInputs.cache
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.csproj.CopyComplete
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.exe
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.pdb
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.Migrations.a.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\obj\Debug\SimpleFactoryPattern.Form1.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\SimpleFactoryPattern\bin\Debug\Data\sinhvien.txt

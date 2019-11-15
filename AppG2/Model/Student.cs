@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace AppG2.Model
     //them modifier public de truy xuat class nay tu cho khac
     public class Student
     {
+        [Key]
         public string IDStudent { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

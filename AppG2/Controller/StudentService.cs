@@ -82,14 +82,27 @@ namespace AppG2.Controller
             return null;
 
         }
+
+        public static Student GetStudentDB(string idStudent)
+        {
+            //var db = new AppG2Context();
+            //return db.StudentDbSet.Where(e => e.IDStudent == idStudent).FirstOrDefault(); 
+            return new AppG2Context().StudentDbSet.Where(e => e.IDStudent == idStudent).FirstOrDefault();
+        }
+
+        public static List<HistoryLearning> GetHistoryLearningDB(string idStudent)
+        {
+            return new AppG2Context().HistoryLearningsDbSet.Where(e => e.IDStudent == idStudent).OrderBy(e=> e.YearFrom).ToList();
+        }
         
-        /// <summary>
-        /// Lấy danh sách quá trình học tập của 1 sinh viên
-        /// </summary>
-        /// <param name="pathDataFile">Đường dẫn tới file chứa dữ liệu</param>
-        /// <param name="idStudent">Mã sinh viên cần lấy</param>
-        /// <returns>Danh sách quá trình học tập</returns>
-        public static List<HistoryLearning> GetHistoryLearning(string pathDataFile, string idStudent)
+
+            /// <summary>
+            /// Lấy danh sách quá trình học tập của 1 sinh viên
+            /// </summary>
+            /// <param name="pathDataFile">Đường dẫn tới file chứa dữ liệu</param>
+            /// <param name="idStudent">Mã sinh viên cần lấy</param>
+            /// <returns>Danh sách quá trình học tập</returns>
+            public static List<HistoryLearning> GetHistoryLearning(string pathDataFile, string idStudent)
         {
 
             if (File.Exists(pathDataFile))

@@ -47,13 +47,15 @@ namespace AppG2.View
             dtgQuaTrinhHocTap.AutoGenerateColumns = false;
 
             //var student = StudentService.GetStudent(maSinhVien);
-            var student = StudentService.GetStudent(pathStudentDataFile, maSinhVien);
+            //var student = StudentService.GetStudent(pathStudentDataFile, maSinhVien);
+            var student = StudentService.GetStudentDB("16T1021165");
 
             if (student == null)
                 throw new Exception("Khong ton tai sinh vien nay");
             else
             {
-                student.ListHistoryLearning = StudentService.GetHistoryLearning(pathHistoryLearningDataFile, maSinhVien);
+                //student.ListHistoryLearning = StudentService.GetHistoryLearning(pathHistoryLearningDataFile, maSinhVien);
+                student.ListHistoryLearning = StudentService.GetHistoryLearningDB(maSinhVien);
                 txtId.Text = student.IDStudent;
                 txtHo.Text = student.LastName;
                 txtTen.Text = student.FirstName;

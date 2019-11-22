@@ -44,6 +44,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lblAll = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.bnImport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgContact)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsContact)).BeginInit();
             this.SuspendLayout();
@@ -191,12 +193,34 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(60, 323);
             this.flowLayoutPanel1.TabIndex = 18;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(34, 538);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(103, 42);
+            this.btnLogout.TabIndex = 19;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // bnImport
+            // 
+            this.bnImport.Location = new System.Drawing.Point(323, 99);
+            this.bnImport.Name = "bnImport";
+            this.bnImport.Size = new System.Drawing.Size(103, 42);
+            this.bnImport.TabIndex = 20;
+            this.bnImport.Text = "Import";
+            this.bnImport.UseVisualStyleBackColor = true;
+            this.bnImport.Click += new System.EventHandler(this.bnImport_Click);
+            // 
             // frmContact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(881, 591);
+            this.Controls.Add(this.bnImport);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.lblAll);
             this.Controls.Add(this.btnClose);
@@ -207,7 +231,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.Name = "frmContact";
-            this.Text = "frmContact";
+            this.Text = "Liên hệ";
             ((System.ComponentModel.ISupportInitialize)(this.dtgContact)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsContact)).EndInit();
             this.ResumeLayout(false);
@@ -232,5 +256,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label lblAll;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button bnImport;
     }
 }

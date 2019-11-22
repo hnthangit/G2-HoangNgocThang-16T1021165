@@ -19,15 +19,19 @@ namespace AppG2.View
         string pathContactFile;
         #endregion
 
-        public frmContact()
+        #region user
+        string idUser;
+        #endregion
+
+        public frmContact(String id)
         {
             InitializeComponent();
             pathContactFile = Application.StartupPath + @"\Data\contact.txt";
-
+            idUser = id;
             bdsContact.DataSource = null;
             dtgContact.AutoGenerateColumns = false;
 
-            var listContactNoSort = ContactService.GetAllContact(pathContactFile);
+            var listContactNoSort = ContactService.GetAllContact(pathContactFile, idUser);
             var listContact = listContactNoSort.OrderBy(x => x.Name).ToList();
             if (listContact == null)
                 throw new Exception("Khong co lien lac nao");
@@ -43,7 +47,7 @@ namespace AppG2.View
         {
             flowLayoutPanel1.Controls.Clear();
             List<string> listLabelDuplicate = new List<string>();
-            var listContactNoSort = ContactService.GetAllContact(pathContactFile);
+            var listContactNoSort = ContactService.GetAllContact(pathContactFile, idUser);
 
             //Them vao mang cac chu cai dau tien cua name
             foreach (var item in listContactNoSort)
@@ -69,11 +73,11 @@ namespace AppG2.View
 
         private void BtnThem_Click(object sender, EventArgs e)
         {
-            var f = new frmContactInfo(null); ;
+            var f = new frmContactInfo(null, idUser) ;
             if (f.ShowDialog() == DialogResult.OK)
             {
                 //Tiến hành nạp lại dữ liệu lên lưới
-                var newContactListNoSort = ContactService.GetAllContact(pathContactFile);
+                var newContactListNoSort = ContactService.GetAllContact(pathContactFile, idUser);
                 List<Contact> newContactList = newContactListNoSort.OrderBy(x => x.Name).ToList();
                 bdsContact.DataSource = newContactList;
                 bdsContact.ResetBindings(true);
@@ -86,11 +90,11 @@ namespace AppG2.View
             var contact = bdsContact.Current as Contact;
             if (contact != null)
             {
-                var f = new frmContactInfo(contact);
+                var f = new frmContactInfo(contact, idUser);
                 if (f.ShowDialog() == DialogResult.OK)
                 {
                     //Tiến hành nạp lại dữ liệu lên lưới
-                    var newContactListNoSort = ContactService.GetAllContact(pathContactFile);
+                    var newContactListNoSort = ContactService.GetAllContact(pathContactFile,idUser);
                     List<Contact> newContactList = newContactListNoSort.OrderBy(x => x.Name).ToList();
                     bdsContact.DataSource = newContactList;
                     bdsContact.ResetBindings(true);
@@ -120,11 +124,14 @@ namespace AppG2.View
                 //hiển thị lại bds
                 bdsContact.ResetBindings(true);
 
-                // xóa trong file
-                String delete = contact.Id + "#" + contact.Name + "#" + contact.Phone + "#" + contact.Email;
-                var Lines = File.ReadAllLines(pathContactFile);
-                var newLines = Lines.Where(line => !line.Contains(delete));
-                File.WriteAllLines(pathContactFile, newLines);
+                var context = new ContactG2Context();
+                context.ContactDbSet.Remove(context.ContactDbSet.Find(contact.Id));
+                context.SaveChanges();
+                //// xóa trong file
+                //String delete = contact.Id + "#" + contact.Name + "#" + contact.Phone + "#" + contact.Email;
+                //var Lines = File.ReadAllLines(pathContactFile);
+                //var newLines = Lines.Where(line => !line.Contains(delete));
+                //File.WriteAllLines(pathContactFile, newLines);
                 //Ép kiểu 2 bdsQuaTrinhHocTap.Current as HistoryLearning
                 MessageBox.Show("Bạn đã xóa thành công. Name: " + contact.Name);
             }
@@ -139,7 +146,7 @@ namespace AppG2.View
 
         private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
-            var contactListNoSort = ContactService.GetContactBySearch(txtSearch.Text, pathContactFile);
+            var contactListNoSort = ContactService.GetContactBySearch(txtSearch.Text, pathContactFile, idUser);
             //var newContactList = contactListNoSort.OrderBy(x => x.Name).ToList();
             bdsContact.DataSource = contactListNoSort;
             bdsContact.ResetBindings(true);
@@ -153,10 +160,39 @@ namespace AppG2.View
         private void Label_Click(object sender, EventArgs e)
         {
             var labelName = ((Label)sender).Text;
-            var listContactNoSort = ContactService.GetContactInAlphabetic(labelName, pathContactFile);
+            var listContactNoSort = ContactService.GetContactInAlphabetic(labelName, pathContactFile, idUser);
             var newContactList = listContactNoSort.OrderBy(x => x.Name).ToList();
             bdsContact.DataSource = newContactList;
             bdsContact.ResetBindings(true);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+        }
+
+        private void bnImport_Click(object sender, EventArgs e)
+        {
+            string filecsv;
+            //Mở file
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Chọn file csv";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                filecsv = openFileDialog.FileName;
+                //Đọc csv file
+                ContactService.ReadFile(filecsv, idUser);
+                //Bind lại view
+                var contactListNoSort = ContactService.GetAllContact(pathContactFile, idUser);
+                //var newContactList = contactListNoSort.OrderBy(x => x.Name).ToList();
+                bdsContact.DataSource = contactListNoSort;
+                bdsContact.ResetBindings(true);
+
+            }
+            //frmImport frmImport1 = new frmImport(idUser);
+            //frmImport1.Show();
         }
     }
 }

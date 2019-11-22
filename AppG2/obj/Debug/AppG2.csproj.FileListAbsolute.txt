@@ -3,7 +3,6 @@ C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\AppG2.pdb
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Properties.Resources.resources
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.GenerateResource.cache
-C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.CoreCompileInputs.cache
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.exe
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.pdb
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.frmTinhToanCoBan.resources
@@ -21,4 +20,7 @@ C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.SqlSe
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.xml
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.CopyComplete
-C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Migrations.a.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Migrations.StudentContext.student.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmLogin.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.Migrations.ContactContext.contact.resources
+C:\Users\Blindfold Gang\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmImport.resources

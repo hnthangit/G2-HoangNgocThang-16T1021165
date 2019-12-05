@@ -24,9 +24,15 @@ namespace AppG2.View
             var user = context.UserDbSet.Where(b => (b.Username == txtusername.Text && b.Password == txtpassword.Text)).FirstOrDefault();
             if (user != null)
             {
-                frmContact frmContact = new frmContact(user.IdUser);                             
-                frmContact.Show();
+                var frmContact = new frmContact(user.IdUser);
                 this.Hide();
+                //Đóng form khi mở ra 1 form mới
+                if(frmContact.ShowDialog() == DialogResult.OK)
+                {
+                    this.Close();
+                }
+                frmContact.Show();
+                
             }
         }
     }

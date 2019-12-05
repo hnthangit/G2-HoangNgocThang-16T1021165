@@ -44,10 +44,11 @@ namespace AppG2.Controller
         {
             if (File.Exists(pathDataFile))
             {
+                var context = new ContactG2Context();
                 List<Contact> listContact = new List<Contact>();
                 //Mở file đọc hết toàn bộ các dòng tỏng file xong đóng file lại
                 var listLines = File.ReadAllLines(pathDataFile);
-
+                List<Contact> listContactFromDb = context.ContactDbSet.ToList();
                 foreach (var lines in listLines)
                 {                  
                     var rs = lines.Split(new char[] { ',' });
@@ -59,8 +60,15 @@ namespace AppG2.Controller
                         Email = rs[2],
                         IdUser = idUser
                     };
-                    listContact.Add(contact);
-                    var context = new ContactG2Context();
+                    foreach(Contact contactDb in listContactFromDb)
+                    {
+                        if(contactDb.Name == contact.Name)
+                        {
+                            context.ContactDbSet.Remove(contactDb);
+                            break;
+                        }
+                    }
+                    listContact.Add(contact);                  
                     context.ContactDbSet.Add(contact);
                     context.SaveChanges();
                 }

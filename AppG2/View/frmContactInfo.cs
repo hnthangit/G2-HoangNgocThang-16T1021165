@@ -66,18 +66,19 @@ namespace AppG2.View
                 //Thêm mới
                 var listContact = ContactService.GetAllContact(pathContactFile, idUser);
                 //Random id moi tu cac id da co
-                var exclude = new HashSet<int>();
+                var exclude = new HashSet<String>();
                 foreach (var item in listContact)
                 {
-                    exclude.Add(Int32.Parse(item.Id));
+                    exclude.Add(item.Id);
                 }
-                var range = Enumerable.Range(1, 100).Where(i => !exclude.Contains(i));
+                //var range = Enumerable.Range(1, 100).Where(i => !exclude.Contains(i));
+                //var range = Guid.NewGuid().ToString();
                 var rand = new System.Random();
                 int index = rand.Next(0, 100 - exclude.Count);
 
                 //Lay id moi
-                string newId = range.ElementAt(index).ToString();
-
+                //string newId = range.ElementAt(index).ToString();
+                string newId = Guid.NewGuid().ToString();
                 var context = new ContactG2Context();
                 context.ContactDbSet.Add(new Contact
                 {
